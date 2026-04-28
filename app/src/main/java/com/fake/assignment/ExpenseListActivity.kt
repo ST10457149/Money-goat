@@ -48,7 +48,7 @@ class ExpenseListActivity : AppCompatActivity() {
                 }
             }.collect { expenses ->
                 rvExpenses.adapter = ExpenseAdapter(expenses) { expense ->
-                    Toast.makeText(this@ExpenseListActivity, "Details: ${expense.description}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ExpenseListActivity, getString(R.string.msg_details, expense.description), Toast.LENGTH_SHORT).show()
                 }
             }
         }

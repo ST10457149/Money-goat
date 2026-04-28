@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (username.isEmpty() || password.isEmpty()) {
                 Log.w("LoginActivity", "Login attempt failed: Empty fields")
-                Toast.makeText(this, "Please enter all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.err_empty_fields, Toast.LENGTH_SHORT).show()
             } else {
                 lifecycleScope.launch {
                     val user = db.goatDao().getUserByUsername(username)
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
                         finish()
                     } else {
                         Log.w("LoginActivity", "Login failed: Invalid credentials for $username")
-                        Toast.makeText(this@LoginActivity, "Invalid credentials", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, R.string.err_invalid_credentials, Toast.LENGTH_SHORT).show()
                     }
                 }
             }

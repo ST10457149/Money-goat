@@ -94,7 +94,7 @@ class CategoryActivity : AppCompatActivity() {
                     Log.i("CategoryActivity", "Category saved: $name")
                 }
             } else {
-                Toast.makeText(this, "Enter category name", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.err_enter_category, Toast.LENGTH_SHORT).show()
             }
         }
     }

@@ -18,4 +18,16 @@
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="login_btn">Login</string>
+    <string name="err_empty_fields">Please enter all fields</string>
+    <string name="err_invalid_credentials">Invalid credentials</string>
+    <string name="msg_expense_saved">Expense Saved!</string>
+    <string name="err_missing_fields">Please fill in all required fields</string>
+    <string name="label_start_time">Start: %1$s</string>
+    <string name="label_end_time">End: %1$s</string>
+    <string name="err_enter_category">Enter category name</string>
+    <string name="msg_details">Details: %1$s</string>
+    <string name="category_mgmt_title">Category Management</string>
+    <string name="set_monthly_goals">Set Monthly Goals</string>
+    <string name="hint_new_category">New Category Name</string>
+    <string name="btn_add">Add</string>
 </resources>

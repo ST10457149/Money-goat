@@ -67,7 +67,7 @@ class AddExpenseActivity : AppCompatActivity() {
             val c = Calendar.getInstance()
             TimePickerDialog(this, { _, hour, minute ->
                 selectedStartTime = String.format("%02d:%02d", hour, minute)
-                btnStartTime.text = "Start: $selectedStartTime"
+                btnStartTime.text = getString(R.string.label_start_time, selectedStartTime)
             }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show()
         }
 
@@ -75,7 +75,7 @@ class AddExpenseActivity : AppCompatActivity() {
             val c = Calendar.getInstance()
             TimePickerDialog(this, { _, hour, minute ->
                 selectedEndTime = String.format("%02d:%02d", hour, minute)
-                btnEndTime.text = "End: $selectedEndTime"
+                btnEndTime.text = getString(R.string.label_end_time, selectedEndTime)
             }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show()
         }
 
@@ -97,7 +97,7 @@ class AddExpenseActivity : AppCompatActivity() {
             val categoryName = spCategory.selectedItem?.toString() ?: ""
 
             if (description.isEmpty() || amountStr.isEmpty() || selectedDate.isEmpty() || categoryName.isEmpty()) {
-                Toast.makeText(this, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.err_missing_fields, Toast.LENGTH_SHORT).show()
                 Log.w("AddExpenseActivity", "Save failed: Missing fields")
                 return@setOnClickListener
             }
@@ -133,7 +133,7 @@ class AddExpenseActivity : AppCompatActivity() {
                 ))
 
                 Log.i("AddExpenseActivity", "Expense saved to Room: $description, Category: $categoryName (ID: $categoryId)")
-                Toast.makeText(this@AddExpenseActivity, "Expense Saved!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@AddExpenseActivity, R.string.msg_expense_saved, Toast.LENGTH_SHORT).show()
                 finish()
             }
         }
