@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MoneyGoat</string>
+    <string name="budget_status">Budget: %1$s - %2$s</string>
+    <string name="insight_over">Insight: You are overspending! Goat Mode: PANIC 🐐💢</string>
+    <string name="insight_warning">Insight: You\'ve passed your minimum goal. Be careful!</string>
+    <string name="insight_good">Insight: Doing great! Goat Mode: CHILL 🐐✨</string>
+    <string name="min_goal_label">Minimum Goal: %1$s</string>
+    <string name="max_goal_label">Maximum Goal: %1$s</string>
+    <string name="showing_filter">Showing: %1$s</string>
+    <string name="add_expense_title">Add New Expense</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_amount">Amount</string>
+    <string name="btn_pick_date">Pick Date</string>
+    <string name="btn_start_time">Start Time</string>
+    <string name="btn_end_time">End Time</string>
+    <string name="btn_add_photo">Add Photo</string>
+    <string name="btn_save_expense">Save Expense</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+</resources>

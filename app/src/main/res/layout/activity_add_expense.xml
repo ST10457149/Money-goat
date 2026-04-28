@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_expense_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#32CD32"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_description"
+            android:autofillHints="none"
+            android:inputType="textCapSentences"
+            android:background="#222222"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_amount"
+            android:autofillHints="none"
+            android:inputType="numberDecimal"
+            android:background="#222222"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pick_date"
+            android:backgroundTint="#32CD32"
+            android:textColor="#000000"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_start_time"
+                android:backgroundTint="#32CD32"
+                android:textColor="#000000"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_end_time"
+                android:backgroundTint="#32CD32"
+                android:textColor="#000000"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_photo"
+            android:textColor="#32CD32"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:contentDescription="Expense Receipt Preview"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save_expense"
+            android:backgroundTint="#32CD32"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
