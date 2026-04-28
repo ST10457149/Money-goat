@@ -22,6 +22,27 @@ The core of MoneyGoat is the **Goat Mode** gamification. Depending on your spend
 - **Coroutines & Flow**: For reactive UI updates.
 - **Material Design**: High-contrast theme (Black, Grey, Lime Green).
 
+## 🏃 How to Run the App
+To get MoneyGoat running locally for marking:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/MoneyGoat.git
+   ```
+2. **Open in Android Studio**:
+   - Open Android Studio and select **File > Open**.
+   - Navigate to the cloned project folder and click **OK**.
+3. **Sync Gradle**:
+   - Wait for the project to sync and build (Android Studio should do this automatically).
+4. **Run on Emulator/Device**:
+   - Select an Android Virtual Device (AVD) or connect a physical device (API 24+).
+   - Click the **Run** button (green play icon) in the toolbar.
+5. **Login**:
+   - For first-time access, use the admin credentials:
+     - **Username**: `admin`
+     - **Password**: `password`
+   - This will seed the initial categories and allow you to explore the features.
+
 ## 📸 Screenshots
 *(Add your screenshots here later)*
 
